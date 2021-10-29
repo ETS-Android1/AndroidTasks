@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pastry1Activity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pastry1_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/donut_image"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/css_grey"
+                android:paddingBottom="10dp"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:id="@+id/pastry1_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/donut_image"
+                android:layout_marginTop="4dp"
+                android:padding="10dp"
+                android:text="@string/recipe_title"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#FFFF00"
+                android:theme="@style/ThemeOverlay.AppCompat.Light" />
+
+            <TextView
+                android:id="@+id/donut_prep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pastry1_title"
+                android:layout_marginTop="4dp"
+                android:padding="10dp"
+                android:text="@string/prep_and_cook_time_2hrs"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="?android:textColorSecondary"
+                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                android:drawableStart="@drawable/ic_prep_time"
+                android:drawableLeft="@drawable/ic_prep_time" />
+
+            <View
+                android:id="@+id/donut_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/donut_prep"
+                android:background="@color/css_grey"/>
+
+            <TextView
+                android:id="@+id/pastry1_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/donut_divider"
+                android:layout_marginTop="3dp"
+                android:padding="8dp"
+                android:text="@string/recipe_short_description"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/navy_blue"
+                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                android:textStyle="italic"
+                />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_below="@id/pastry1_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/how_to_prepare_pastry_1"
+            android:textStyle="bold"
+            android:textColor="@color/navy_blue" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

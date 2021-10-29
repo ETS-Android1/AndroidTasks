@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Volley</string>
+    <string name="username">Username</string>
+    <string name="url">http://url.com</string>
+</resources>
